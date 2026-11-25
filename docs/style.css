@@ -1,0 +1,25 @@
+/* Внешняя таблица стилей. БЭМ: блок__элемент_модификатор. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background-color: #E4EFE7; color: #243D30; font-family: Georgia, 'Times New Roman', serif; font-size: 18px; line-height: 1.65; }
+a { color: #215C42; text-underline-offset: 4px; }
+a:hover { color: #713F20; }
+a:focus-visible { outline: 3px solid #713F20; outline-offset: 5px; }
+.page { max-width: 960px; margin: 0 auto; padding: 32px 28px; }
+.header { border-bottom: 1px solid #a6bca9; padding-bottom: 24px; }
+.header__caption { margin: 0 0 8px; font-family: Arial, sans-serif; font-size: 16px; }
+.header__title { margin: 0 0 16px; color: #435A36; font-size: clamp(30px, 5vw, 46px); line-height: 1.2; }
+.menu { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 0; padding: 0; list-style: none; }
+.section { margin: 32px 0; scroll-margin-top: 24px; }
+.section__title { margin: 0 0 12px; color: #435A36; font-size: 28px; }
+.section__text { margin: 0 0 12px; }
+.members { padding-left: 24px; }
+.members__item { padding: 3px 0; }
+.member { margin: 14px 0; padding: 16px 20px; background: #FDFaf6; border-left: 3px solid #99BC85; }
+.member__name { margin: 0 0 4px; font-size: 21px; }
+.member__text { margin: 0; }
+.member_featured { border-left-color: #435A36; }
+.resources { padding-left: 24px; }
+.resources__item { margin: 10px 0; }
+.footer { border-top: 1px solid #a6bca9; padding-top: 18px; font-size: 16px; }
+@media (max-width: 540px) { .page { padding: 24px 18px; } .menu { gap: 8px 18px; } .section { margin: 24px 0; } }
